@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-weight: bold;
+  color: rgb(42, 104, 6);
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: rgb(42, 104, 6);
+}
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.left-home,
+.right-home {
+  flex: 1;
+  text-align: center;
+}
+
+.left-home img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: black;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Individual icon hover colors */
+.social-icons a[href*="github"]:hover {
+  color: black;
+}
+
+.social-icons a[href*="linkedin"]:hover {
+  color: #0A66C2; /* LinkedIn Original Blue */
+}
+
+.social-icons a[href*="wa.me"]:hover {
+  color: green;
+}
+
+.social-icons a[href*="instagram"]:hover {
+  color: red;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 300px;
+  background-color: rgb(42, 104, 6);
+  margin: 0 20px;
+}
+
+.section-divider {
+  width: 60%;
+  margin: 40px auto;
+  border-top: 3px solid #888;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(42, 104, 6);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skill {
+  text-align: center;
+}
+
+.skill i {
+  font-size: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+li::before {
+  content: '➤';
+  margin-right: 10px;
+  color: rgb(42, 104, 6);
+}
+
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  font-weight: bold;
+  color: rgb(65, 66, 65);
+}
+
+.highlight {
+  color: black;
+  font-weight: bold;
+}
