@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
 
-  <!-- ✅ Font Awesome for Social Media Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -153,44 +152,20 @@
       border-radius: 9px;
       text-align: center;
       font-weight: 500;
-      color: #0f0f10;
+      color: #194fa0;
       font-size: 1.05em;
       transition: transform .15s, box-shadow .18s;
       box-shadow: 0 1.5px 8px rgba(36,107,253,0.06);
     }
-    .skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.skills-list li {
-  background: var(--grey);
-  padding: 1.1em .8em;
-  border-radius: 9px;
-  text-align: center;
-  font-weight: 500;
-  color: #194fa0;
-  font-size: 1.05em;
-  transition: transform .15s, box-shadow .18s;
-  box-shadow: 0 1.5px 8px rgba(36,107,253,0.06);
-}
-
-.skills-list li i {
-  font-size: 32px;   /* icon size */
-  margin-bottom: 8px;
-  color: var(--primary);
-}
-
-.skills-list li:hover {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 2px 12px rgba(36,107,253,0.2);
-}
-
-    .skills-list li:hover { transform: translateY(-4px) scale(1.04); }
+    .skills-list li i {
+      font-size: 32px;  /* icon size */
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    .skills-list li:hover {
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 2px 12px rgba(36,107,253,0.2);
+    }
 
     /* Projects */
     .projects-grid {
@@ -232,11 +207,8 @@
       font-size: .97em;
     }
     .project-actions a:hover { color: var(--highlight); }
-
-    /* Resume Certificates */
-    #resume { text-align: center; padding: 50px 20px; background: #f9f9f9; }
-    #resume h2 { font-size: 28px; color: #236ee7; margin-bottom: 15px; }
-    #resume p { font-size: 16px; color: #555; margin-bottom: 30px; }
+    
+    /* Certificates Section */
     .certificate-container {
       display: flex;
       flex-wrap: wrap;
@@ -251,6 +223,7 @@
       width: 250px;
       box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
     }
     .certificate-card:hover {
       transform: translateY(-5px);
@@ -268,7 +241,7 @@
     }
     .certificate-card a:hover { color: #0056b3; }
 
-    /* ✅ Social Media Round Icons */
+    /* Social Media Round Icons */
     .social-links {
       margin-top: 2em;
       display: flex;
@@ -294,6 +267,7 @@
     .social-links a[title="LinkedIn"]:hover { color: #fff; background: #0077b5; }
     .social-links a[title="Instagram"]:hover { color: #fff; background: #f40ac5; }
     .social-links a[title="WhatsApp"]:hover { color: #fff; background: #25d366; }
+    .social-links a[title="Mobile"]:hover { color: #fff; background: #333; }
 
     footer {
       background: var(--grey);
@@ -322,14 +296,13 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">certificates</a></li>
+        <li><a href="#certificates">Certificates</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
     <div class="container hero">
       <img src="./WhatsApp Image 2025-08-14 at 14.15.30_de11479d.jpg" alt="Your Profile Photo">
       <h1>RAMKUMAR</h1>
@@ -338,34 +311,31 @@
         <a href="#projects">View Projects</a>
         <a href="./data.pdf" class="resume">Download Resume</a>
       </div>
+    </div>
 
-    <!-- About -->
     <div class="container">
       <section id="about" class="about">
         <h2>About Me</h2>
-        <p>I am a <b>web developer</b> with a strong background in <b>HTML, CSS, JavaScript, Node.js</b>. 
-           I enjoy turning innovative ideas into real-world solutions. 
-           My goal is to create technology that makes a difference.</p>
+        <p>I am a <b>web developer</b> with a strong background in <b>HTML, CSS, JavaScript, and Node.js</b>. 
+            I enjoy turning innovative ideas into real-world solutions. 
+            My goal is to create technology that makes a difference.</p>
       </section>
 
-      <!-- Skills -->
- <section id="skills">
-  <h2>Skills</h2>
-  <ul class="skills-list">
-    <li><i class="fab fa-js-square"></i><br>JavaScript</li>
-    <li><i class="fab fa-html5"></i><br>HTML</li>
-    <li><i class="fab fa-css3-alt"></i><br>CSS</li>
-    <li><i class="fab fa-react"></i><br>React</li>
-    <li><i class="fab fa-node-js"></i><br>Node.js</li>
-    <li><i class="fab fa-python"></i><br>Python</li>
-    <li><i class="fas fa-database"></i><br>SQL</li>
-    <li><i class="fas fa-code"></i><br>C++</li>
-    <li><i class="fab fa-github"></i><br>GitHub</li>
-  </ul>
- </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li><i class="fab fa-js-square"></i><br>JavaScript</li>
+          <li><i class="fab fa-html5"></i><br>HTML</li>
+          <li><i class="fab fa-css3-alt"></i><br>CSS</li>
+          <li><i class="fab fa-react"></i><br>React</li>
+          <li><i class="fab fa-node-js"></i><br>Node.js</li>
+          <li><i class="fab fa-python"></i><br>Python</li>
+          <li><i class="fas fa-database"></i><br>SQL</li>
+          <li><i class="fas fa-code"></i><br>C++</li>
+          <li><i class="fab fa-github"></i><br>GitHub</li>
+        </ul>
+      </section>
 
-
-      <!-- Projects -->
       <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
@@ -379,7 +349,6 @@
               <a href="https://github.com/RAMKUMARSUDHA/EVENTS-DECORS" target="_blank">GitHub</a>
             </div>
           </div>
-
           <div class="project-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Z1pdYP1sDUKN6IIdNerMuJ6i_9LpR3dQXg&s" alt="Project Screenshot">
             <span class="project-title">Namm Bus</span>
@@ -390,7 +359,6 @@
               <a href="https://github.com/RAMKUMARSUDHA/naughty-55" target="_blank">GitHub</a>
             </div>
           </div>
-
           <div class="project-card">
             <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?fit=crop&w=400&q=80" alt="Project Screenshot">
             <span class="project-title">AI Chatbot Assistant</span>
@@ -404,30 +372,32 @@
         </div>
       </section>
 
-      <!-- Certificates -->
       <section id="certificates" class="certificates">
         <h2>Certificates</h2>
         <p>I have attended workshops, conferences, and specialized courses. Here are some of my certificates:</p>
         <div class="certificate-container">
-          <div class="certificate-card"><h3>Data Analytics With Generative AI</h3><a href="./Certificate1.pdf" target="_blank">View Certificate</a></div>
-          <div class="certificate-card"><h3>AI Agent</h3><a href="./Certificate2.pdf" target="_blank">View Certificate</a></div>
-          <div class="certificate-card"><h3>PowerBI Certificate</h3><a href="./Certificate3.pdf" target="_blank">View Certificate</a></div>
-          <div class="certificate-card"><h3>Generative AI</h3><a href="./Certificate4.pdf" target="_blank">View Certificate</a></div>
-          <div class="certificate-card"><h3>GoLang Framework</h3><a href="./Certificate5.pdf" target="_blank">View Certificate</a></div>
+          <div class="certificate-card"><h3>Data Analytics With Generative AI</h3><a href="./Certificate1.jpg" target="_blank">View Certificate</a></div>
+          <div class="certificate-card"><h3>AI Agent</h3><a href="./Certificate2.jpg" target="_blank">View Certificate</a></div>
+          <div class="certificate-card"><h3>PowerBI Certificate</h3><a href="./Certificate3.jpg" target="_blank">View Certificate</a></div>
+          <div class="certificate-card"><h3>Generative AI</h3><a href="./Certificate4.jpg" target="_blank">View Certificate</a></div>
+          <div class="certificate-card"><h3>GoLang Framework</h3><a href="./Certificate5.jpg" target="_blank">View Certificate</a></div>
         </div>
       </section>
-        <!-- ✅ Social Icons again under Contact -->
-        <div class="social-links">
-          <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://instagram.com/_itz_me_406" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/7418519493" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        </div>
+      
+      <section id="contact">
+          <h2>Contact Me</h2>
+          <p>Feel free to reach out via my social channels or give me a call:</p>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/_itz_me_406" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/7418519493" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:7418519493" target="_blank" title="Mobile"><i class="fas fa-phone"></i></a>
+          </div>
       </section>
+      
     </div>
   </main>
-
-  
 
   <script>
     // Smooth reveal on scroll
